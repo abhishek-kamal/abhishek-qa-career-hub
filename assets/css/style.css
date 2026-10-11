@@ -2,8 +2,8 @@
 
 :root {
   --bg: #080b10;
-  --surface: #0e131a;
-  --surface-2: #121923;
+  --surface: #151e29;
+  --surface-2: #1b2734;
   --text: #f4f7fb;
   --muted: #9ca8b8;
   --line: #222b37;
@@ -101,15 +101,26 @@ nav a:hover {
 .section {
   max-width: var(--max);
   margin: auto;
-  padding: 105px 28px;
+  padding: 80px 28px;
 }
 
-.hero {
+/* .hero {
   min-height: calc(100vh - 74px);
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 70px;
   align-items: center;
+} */
+
+
+.hero {
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .eyebrow {
@@ -286,16 +297,25 @@ code {
    ALTERNATE SECTION
    ===================================================== */
 
-.alt {
-  max-width: none;
-  background: var(--surface);
-}
+   /* .alt {
+    max-width: none;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  } */
 
-.alt > * {
-  max-width: var(--max);
-  margin-left: auto;
-  margin-right: auto;
-}
+  .alt {
+    max-width: none;
+    background: var(--surface);
+    border-top: 1px solid #263241;
+    border-bottom: 1px solid #263241;
+  }
+
+  .alt > * {
+    max-width: var(--max);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /* =====================================================
    ABOUT
